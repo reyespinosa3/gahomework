@@ -32,3 +32,15 @@ let pythagoras = (sideA, sideB) => {
   return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
 }
 console.log(pythagoras(8, 6));
+
+
+//SUM ARRAY
+let sum = 0;
+
+let sumArray = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+  return sum;
+}
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
