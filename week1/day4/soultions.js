@@ -26,6 +26,7 @@ let calculateSide = (sideA, sideB) => {
   return
 }
 
+//hello
 //PYTHAGORAS
 
 let pythagoras = (sideA, sideB) => {
@@ -62,3 +63,10 @@ let printPrime = (num) => {
   }
 }
 printPrime(21);
+
+// Insert Dash
+
+// break number into an array
+// compare number in array to next number in array
+// if both are odd insert a dash between them
+// loop around and do it again until end of array
