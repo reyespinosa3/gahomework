@@ -44,3 +44,21 @@ let sumArray = (array) => {
   return sum;
 }
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+//CHECK PRIME NUMBER
+let isPrime = (num) => {
+    for(let i = 2, s = Math.sqrt(num); i <= s; i++)
+        if(num % i === 0) return false;
+    return num !== 1;
+}
+isPrime(6);
+
+//PRINT PRIME NUMBERS
+let printPrime = (num) => {
+  for (let i = 2; s = Math.sqrt(num); i <= s; i++) {
+    if (num % i === 0 && num !== 1) {
+      console.log(i);
+    }
+  }
+}
+printPrime(21);
