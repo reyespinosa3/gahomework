@@ -12,3 +12,12 @@ let isPal = (word) => {
   return (lower === lower.split('').reverse().join(''))
 }
 isPal("rad");
+
+//DIGIT SUM
+let sumDigits = (num) => {
+  return num.toString()
+  .split('').map(Number).reduce(function (a, b) {
+            return a + b;
+        }, 0);
+}
+console.log(sumDigits(422));
