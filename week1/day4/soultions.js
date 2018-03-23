@@ -21,3 +21,14 @@ let sumDigits = (num) => {
         }, 0);
 }
 console.log(sumDigits(422));
+
+let calculateSide = (sideA, sideB) => {
+  return
+}
+
+//PYTHAGORAS
+
+let pythagoras = (sideA, sideB) => {
+  return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+}
+console.log(pythagoras(8, 6));
