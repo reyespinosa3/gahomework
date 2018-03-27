@@ -107,4 +107,10 @@ for (i=0; i<bondFilms.length; i++) {
     bondFilmTitles.push(bondFilms[i].title);
     console.log(bondFilmTitles);
 
-    
+for (i=0; i<bondFilms.length; i++) {
+    let bondFilmsOdd = [];
+      if (bondFilms[i].year % 2 !== 0){
+      bondFilmsOdd.push(bondFilms[i].year);
+      }
+    console.log(bondFilmsOdd);
+}
