@@ -114,3 +114,13 @@ for (i=0; i<bondFilms.length; i++) {
       }
     console.log(bondFilmsOdd);
 }
+
+let totalGross = 0;
+
+for (var i = 0; i < bondFilms.length; i++) {
+  let x = bondFilms[i].gross;
+  let y = x.replace('$','').replace(/,/g,'');
+  totalGross += Number(y);
+  }
+
+  console.log(totalGross);
