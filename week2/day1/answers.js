@@ -49,7 +49,7 @@ const crazyObject = {
     ]
   }
 }
-console.log(crazyObject.taco[0].salsa[5]);
+console.log(crazyObject.taco[1].salsa[5]);
 console.log(crazyObject.larry.quotes[0]);
 console.log(crazyObject.larry.characters[2].favourtieHobby);
 console.log(crazyObject.larry.nicknames[1]);
