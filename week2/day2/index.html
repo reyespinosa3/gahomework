@@ -7,16 +7,16 @@
   </head>
   <body>
     <h1>Micro Blog</h1>
+
       <form id="microblogform">
-        <input id="microblogpost" type="text" placeholder="Micro Blog Post">
+        <input id="microblogpost" type="text" placeholder="Micro Blog Post"><br>
+        <button type="submit" form="microblogform" value="submit">Post</button>
       </form>
-      <button type="submit" form="microblogform" value="Submit">Post</button>
+
     <h1>Recent Micro Blog Posts</h1>
-      <ul>
-        <li id="firstpost">Blog Post</li>
-        <li id="secondpost">Blog Post</li>
-        <li id="thirdpost">Blog Post</li>
-      </ul>
+      <section><span id="first"></span></section>
+      <section><span id="second"></span></section>
+      <section><span id="third"></span></section>
     <script src="js/main.js"></script>
   </body>
 </html>
