@@ -4,7 +4,7 @@ let endpoint = "http://data.fixer.io/api/latest?access_key=f9a0925f72a5a35091b64
 
 $.ajax({
   method: 'GET',
-  url: "http://data.fixer.io/api/latest?access_key=f9a0925f72a5a35091b6482b573f8067&",
+  url: "http://data.fixer.io/api/latest?access_key=f9a0925f72a5a35091b6482b573f8067",
   dataType: 'json',
   success: onSuccess
 });
@@ -18,7 +18,6 @@ function onSuccess(responseData) {
 
       let amount = $('#amount').val();
       console.log(amount);
-
         if (event.target.id === 'usa') {
         let dollar = amount * (data.rates.USD);
         $("#output_amount").append("<p></p>").text(dollar);
