@@ -16,11 +16,26 @@ app.set('view engine', 'ejs');
 
 /* error logger, static routes */
 app.use(logger('dev'));
-app.use('/static', express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 
 app.get("/sample", function(req,res){
 	// here's a sample route
+  res.send({message: 'This is a sample page'})
+});
+// returns header, main and footer for Ada's Pizza homepage
+app.get("/homepage", function(req, res){
+  res.render("index");
+})
+
+// returns header, main and footer for all pizza page
+app.get("/pizzas", function(req, res) {
+  res.render(__dirname + "/views/pizza/pizza-index");
+})
+
+// return header, main and footer for individual pizza pages
+app.get("/pizzas/:id", function(req, res) {
+  res.render(__dirname + "/views/pizza/pizza-single");
 })
 
 /* error handler */
