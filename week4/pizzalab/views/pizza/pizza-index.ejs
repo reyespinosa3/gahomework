@@ -3,11 +3,11 @@
   - the pizza flavors should also have the location and the picture
 -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
-    <title>Ada's Pizza</title>
+    <title></title>
   </head>
   <body>
     <header>
@@ -15,9 +15,18 @@
     </header>
 
     <h1>Ada's Pizza Show All Pizzas</h1>
-
+      <section>
+        <% pizza.forEach(function(pizza) { %>
+          <div>
+            <h3> <%= pizza.flavor %> </h3>
+            <p> <%= pizza.location %> </p>
+            <img src=" <%= pizza.image %> ">
+          </div>
+        <% }) %>
+      </section>
     <footer>
       <% include ../partials/footer %>
     </footer>
+
   </body>
 </html>

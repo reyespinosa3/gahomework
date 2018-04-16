@@ -18,25 +18,28 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.static('public'));
 
+// app.use('/static', express.static(path.join(__dirname, 'public')));
 
 app.get("/sample", function(req,res){
 	// here's a sample route
   res.send({message: 'This is a sample page'})
 });
-// returns header, main and footer for Ada's Pizza homepage
-app.get("/homepage", function(req, res){
-  res.render("index");
-})
 
-// returns header, main and footer for all pizza page
-app.get("/pizzas", function(req, res) {
-  res.render(__dirname + "/views/pizza/pizza-index");
-})
+// app.get('/', function(req, res) {
+//   res.render('index')
+// })
+//
+// app.get('/pizzas', function(req, res) {
+//   res.render('pizza/pizza-index')
+// })
 
-// return header, main and footer for individual pizza pages
-app.get("/pizzas/:id", function(req, res) {
-  res.render(__dirname + "/views/pizza/pizza-single");
-})
+// importing index.js and pizza.js from routes folder
+const indexRoute = require('./routes/index');
+const pizzaRoute = require('./routes/pizza');
+const pizzaData  = require('./db/pizza');
+
+app.use('/pizzas', pizzaRoute);
+app.use('/', indexRoute);
 
 /* error handler */
 app.get('*', function(req, res) {

@@ -1,44 +1,45 @@
+console.log("pizza js in db is running");
 const pizza = [
   {
     flavor: 'Pepperoni',
     flavorKey: 'pepperoni',
     location: 'New York',
     locationKey: 'nyc',
-    image: '/assets/pepperoni.jpg',
+    image: '../images/pepperonipizza.png',
   },
   {
     flavor: 'cheese',
     flavorKey: 'cheese',
     location: 'New York',
     locationKey: 'nyc',
-    image: '/assets/cheese.jpg',
+    image: '../images/cheesepizza.png',
   },
   {
     flavor: 'sausage',
     flavorKey: 'sausage',
     location: 'New York',
     locationKey: 'nyc',
-    image: '/assets/sausage.jpg',
+    image: '../images/sausagepizza.png',
   },
   {
     flavor: 'ham & mushroom',
     flavorKey: 'ham-mushroom',
     location: 'Italy',
     locationKey: 'italy',
-    image: '/assets/ham-mushroom.jpg',
+    image: '../images/hammushroompizza.png',
   },
   {
     flavor: 'deep dish',
     flavorKey: 'deep-dish',
     location: 'Chicago',
     locationKey: 'chicago',
-    image: '/assets/deep-dish.jpg',
+    image: '../images/deepdishpizza.png',
   },
   {
     flavor: 'pineapple',
     location: 'Hawaii',
     locationKey: 'hawaii',
-    image: '/assets/pineapple.jpg',
+    image: '../images/pineapplepizza.png',
   }
 ];
 

@@ -2,14 +2,17 @@
   This view should only display one pizza, with flavor, location, and picture.
 -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
     <title></title>
   </head>
   <body>
-    <% include partials/header %>
-    <h1>Show individual pizzas here</h1>
-    <% include particals/footer %>
+    <% include ../partials/header %>
+    <h1> <%= pizza.flavor %> </h1>
+    <p> <%= pizza.location %> </p>
+    <img src=" <%= pizza.image %> " >
+    <% include ../partials/footer %>
   </body>
 </html>
