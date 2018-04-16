@@ -25,9 +25,9 @@ app.get("/sample", function(req,res){
   res.send({message: 'This is a sample page'})
 });
 
-// app.get('/', function(req, res) {
-//   res.render('index')
-// })
+app.get('/home', function(req, res) {
+  res.render('index')
+})
 //
 // app.get('/pizzas', function(req, res) {
 //   res.render('pizza/pizza-index')

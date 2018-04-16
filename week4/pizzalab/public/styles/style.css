@@ -1,6 +1,8 @@
 body {
   background-image: url("../assets/adasplace.png");
-  color: white;
+  color: red;
+  text-transform: uppercase;
+  text-shadow: 3px -3px yellow;
 }
 header {
 }
@@ -26,11 +28,16 @@ img {
   height: 200px;
   width: 200px;
 }
-h1, h3 {
+h1 {
+  font-size: 45px;
+  text-align: center;
+}
+h3 {
   font-size: 40px;
   text-align: center;
 }
 p {
+  font-size: 36px;
   text-align: center;
 }
 footer {

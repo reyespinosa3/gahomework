@@ -5,7 +5,7 @@ const pizzaRoute = express.Router();
 
 /* import the pizza data */
 const pizzaData = require('../db/pizza');
-console.log(pizzaData);
+
 /* you'll need two routes:
   - all pizza
   - individual pizza
